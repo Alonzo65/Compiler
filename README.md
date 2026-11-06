@@ -1,5 +1,3 @@
-# Compiler
-KXI Compiler Project
 # KXI Compiler
 
 A compiler for the KXI programming language, written in Python as my senior project.
