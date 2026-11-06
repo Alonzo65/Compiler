@@ -1,0 +1,60 @@
+class myClass{
+    private char fun2(int x){
+
+        cout << x;
+        return 'd';
+    }
+    public int funct(){
+        string fun = "runningfunction";
+        cout << fun;
+        int y = 10;
+        fun2(y);
+        return y;
+
+    }
+
+}
+
+void kxi2023 main (){
+    cout << 2;
+    myClass mycl;
+    int y;
+    mycl.funct();
+    cout << mycl.funct();
+    
+    cout << y = mycl.funct();
+    y = mycl.funct(); //we need to keep shifting so that it can detect the right token 
+    //y = mycl.funct(); causes error because assignment will take the id meant for the period expression same for any other operator 
+    y = 3 + mycl.funct();
+    cout << y;
+    '"';
+    'd';
+    'e';
+    '\'';
+    "'";
+    //"\""; //this one wont work, also need another way to keep track of labels cause 
+    
+    switch(5+2){
+        case 3:
+        cout << "first case";
+        case 7:
+        cout << "second case";
+        break;
+        case 2:
+        break;
+        cout << "third case";
+        default: 
+        cout << "default";
+    }
+    //i dont think the whole entierity of our while loop is being loaded in like its contents
+    //actually wait remember that our switch turns into ifs 
+    int x = 2;
+    while(x<10){
+        cout << x;
+        x += 1;
+    }
+    //personal note strings are not allowed to contain digits or numbers in them
+    if (x==10) {
+        cout << "x is ten";//it thinks that numbers are letters
+        }
+}

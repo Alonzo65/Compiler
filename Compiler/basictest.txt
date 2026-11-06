@@ -1,0 +1,72 @@
+
+
+class newempt{
+    public int dje;
+    public int numb(){
+        cout << "hello there";
+
+        return 3;
+    }
+    public char charb(){
+        cout << "hello char";
+        newempt leo;
+
+        return 'f';
+    }
+}
+
+void kxi2023 main (){
+    //Functions var1 = null;
+    //var1.comma = 'd';
+    //bool tr = true;
+    //true == true;
+    //true != tr;
+    //y > y; //check limits for if they are equal make sure im doing the right thing 
+    //tr > tr;
+    y = 1;
+    cout << y=y=y=y;
+    cout << '\n';
+    cout << y+=y;
+    cout << '\n';
+    cout << y+=y+=y;
+    cout << '\n';
+    cout << y+=y-=3;
+    cout << '\n';
+    y = 2;
+    cout << y*=y*=y;
+    cout << y;
+    cout << '\n';
+    cout << y/=y/=y;
+    //cout << y/=y;
+    newempt idse;
+    cout << y = idse.numb();
+    cout << idse.charb();
+    char iewo = 'h';
+    cout << iewo;
+    cout << iewo = idse.charb();
+    cout << '\n';
+
+    int y = 1;
+
+    //cout << '\'';
+    //cout << '"';
+    //cout << "\"";
+    //cout << "'"; //make sure our assembler can handle this
+    //cout << "\"';:\\";
+    //cout << '\\'; // how should our assembler handle \\
+    //cout << '/';
+    //cout << "///\\\\\\\n";
+    
+    //mycl.funct(y);
+    
+    //cout << mycl.funct(y);
+    cin >> y;
+    cout << y;
+    //cout << y = mycl.funct();
+    //y = mycl.funct(y); //we need to keep shifting so that it can detect the right token 
+    //y = mycl.funct(); //causes error because assignment will take the id meant for the period expression same for any other operator 
+   // y = 3 + mycl.funct();
+    //cout << y;
+    
+    
+}

@@ -1,0 +1,491 @@
+ZERO .INT #0
+ONE .INT #1
+NULLTERM .BYT '\0'
+lablit0 .BYT 'h'
+ .BYT 'e'
+ .BYT 'l'
+ .BYT 'l'
+ .BYT 'o'
+ .BYT ' '
+ .BYT 't'
+ .BYT 'h'
+ .BYT 'e'
+ .BYT 'r'
+ .BYT 'e'
+ .BYT '\0'
+lablit1 .INT #3
+lablit2 .INT #0
+lablit3 .BYT 'h'
+ .BYT 'e'
+ .BYT 'l'
+ .BYT 'l'
+ .BYT 'o'
+ .BYT ' '
+ .BYT 'c'
+ .BYT 'h'
+ .BYT 'a'
+ .BYT 'r'
+ .BYT '\0'
+lablit4 .BYT 'f'
+lablit5 .BYT 
+lablit6 .INT #1
+lablit10 .BYT 'h'
+lablit11 .BYT '\n'
+ JMP MAIN
+MAIN MOV R4, FP
+ MOV FP, SP
+ ADI SP, #-4
+ STR R4, SP
+ ADI SP, #-75
+ MOV R5, PC
+ ADI R5, #36
+ STR R5, FP
+ JMP global_main
+ TRP #0
+global_main ADI R3, #0
+ MOV R2, FP
+ ADI R2, #-8
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-12
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-13
+ LDR R1, ZERO
+ STB R1, R2
+ MOV R2, FP
+ ADI R2, #-17
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-21
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-25
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-29
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-33
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-37
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-41
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-45
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-49
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-53
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-57
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-61
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-65
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-69
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-73
+ LDR R1, ZERO
+ STR R1, R2
+ MOV R2, FP
+ ADI R2, #-74
+ LDR R1, ZERO
+ STB R1, R2
+ MOV R2, FP
+ ADI R2, #-75
+ LDR R1, ZERO
+ STB R1, R2
+ LDR R1, lablit6
+ MOV R0, FP
+ ADI R0, #-8
+ STR R1, R0
+ LDR R0, lablit6
+ LDR R1, lablit6
+ CMP R0, R1
+ BNZ R0, false_label0
+ LDR R1, ONE
+ JMP trueexit_label1
+false_label0 LDR R1, ZERO
+trueexit_label1 ADI R3, #0
+ MOV R0, FP
+ ADI R0, #-21
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-21
+ LDR R0, lablit6
+ MOV R1, FP
+ ADI R1, #-8
+ LDR R1, R1
+ CMP R0, R1
+ BRZ R0, false_label2
+ LDR R1, ONE
+ JMP trueexit_label3
+false_label2 LDR R1, ZERO
+trueexit_label3 ADI R3, #0
+ MOV R0, FP
+ ADI R0, #-25
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-25
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ CMP R0, R1
+ BGT R0, trueexit_label5
+ LDR R1, ZERO
+ JMP false_label4
+trueexit_label5 LDR R1, ONE
+false_label4 ADI R3, #0
+ MOV R0, FP
+ ADI R0, #-29
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-29
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-33
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-33
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ ADD R1, R0
+ MOV R0, FP
+ ADI R0, #-37
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-37
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ ADD R1, R0
+ MOV R0, FP
+ ADI R0, #-41
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-41
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ ADD R1, R0
+ MOV R0, FP
+ ADI R0, #-45
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-45
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ SUB R0, R1
+ MOV R1, R0
+ MOV R0, FP
+ ADI R0, #-49
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-49
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ ADD R1, R0
+ MOV R0, FP
+ ADI R0, #-53
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-53
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ MUL R1, R0
+ MOV R0, FP
+ ADI R0, #-57
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-57
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MUL R1, R0
+ MOV R0, FP
+ ADI R0, #-61
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-61
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ DIV R0, R1
+ MOV R1, R0
+ MOV R0, FP
+ ADI R0, #-65
+ STR R1, R0
+ MOV R0, FP
+ ADI R0, #-17
+ LDR R0, R0
+ MOV R1, FP
+ ADI R1, #-65
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ DIV R0, R1
+ MOV R1, R0
+ MOV R0, FP
+ ADI R0, #-69
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-69
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ LDR R1, ZERO
+ MOV R1, FP
+ ADI R1, #-12
+ LDR R1, R1
+ MOV R2, SP
+ ADI R2, #-8
+ STR R1, R2
+ MOV R4, FP
+ MOV FP, SP
+ ADI SP, #-4
+ STR R4, SP
+ ADI SP, #-8
+ MOV R5, PC
+ ADI R5, #36
+ STR R5, FP
+ JMP newempt_numb
+ LDR R1, SP
+ MOV R0, FP
+ ADI R0, #-73
+ STR R1, R0
+ MOV R1, FP
+ ADI R1, #-73
+ LDR R1, R1
+ MOV R0, FP
+ ADI R0, #-17
+ STR R1, R0
+ MOV R3, R1
+ TRP #1
+ MOV R1, FP
+ ADI R1, #-12
+ LDR R1, R1
+ MOV R2, SP
+ ADI R2, #-8
+ STB R1, R2
+ MOV R4, FP
+ MOV FP, SP
+ ADI SP, #-4
+ STR R4, SP
+ ADI SP, #-12
+ MOV R5, PC
+ ADI R5, #36
+ STR R5, FP
+ JMP newempt_charb
+ LDB R1, SP
+ MOV R0, FP
+ ADI R0, #-74
+ STB R1, R0
+ MOV R0, FP
+ ADI R0, #-74
+ MOV R3, R1
+ TRP #3
+ LDB R1, lablit10
+ MOV R0, FP
+ ADI R0, #-13
+ STB R1, R0
+ MOV R1, FP
+ ADI R1, #-13
+ LDB R1, R1
+ MOV R3, R1
+ TRP #3
+ MOV R1, FP
+ ADI R1, #-12
+ LDR R1, R1
+ MOV R2, SP
+ ADI R2, #-8
+ STB R1, R2
+ MOV R4, FP
+ MOV FP, SP
+ ADI SP, #-4
+ STR R4, SP
+ ADI SP, #-12
+ MOV R5, PC
+ ADI R5, #36
+ STR R5, FP
+ JMP newempt_charb
+ LDB R1, SP
+ MOV R0, FP
+ ADI R0, #-75
+ STB R1, R0
+ MOV R1, FP
+ ADI R1, #-75
+ LDB R1, R1
+ MOV R0, FP
+ ADI R0, #-13
+ STB R1, R0
+ MOV R3, R1
+ TRP #3
+ LDB R1, lablit11
+ MOV R3, R1
+ TRP #3
+ LDR R1, ZERO
+ TRP #2
+ MOV R1, FP
+ ADI R1, #-17
+ STR R3, R1
+ MOV R1, FP
+ ADI R1, #-17
+ LDR R1, R1
+ MOV R3, R1
+ TRP #1
+ MOV R4, FP
+ ADI R4, #-4
+ MOV SP, FP
+ LDR FP, R4
+ LDR R5, SP
+ JMR R5
+ LDR R1, ZERO
+newempt_numb ADI R3, #0
+ LDA R1, lablit0
+output_string0 LDB R3, R1
+ LDB R2, NULLTERM
+ CMP R2, R3
+ BRZ R2, exit_string0
+ TRP #3
+ ADI R1, #1
+ JMP output_string0
+exit_string0 ADI R3, #0
+ LDR R1, lablit1
+ MOV R4, FP
+ ADI R4, #-4
+ MOV SP, FP
+ LDR FP, R4
+ LDR R5, SP
+ STR R1, SP
+ JMR R5
+ LDR R1, lablit2
+ MOV R4, FP
+ ADI R4, #-4
+ MOV SP, FP
+ LDR FP, R4
+ LDR R5, SP
+ STR R1, SP
+ JMR R5
+newempt_charb ADI R3, #0
+ MOV R2, FP
+ ADI R2, #-12
+ LDR R1, ZERO
+ STR R1, R2
+ LDA R1, lablit3
+output_string1 LDB R3, R1
+ LDB R2, NULLTERM
+ CMP R2, R3
+ BRZ R2, exit_string1
+ TRP #3
+ ADI R1, #1
+ JMP output_string1
+exit_string1 ADI R3, #0
+ LDR R1, ZERO
+ LDB R1, lablit4
+ MOV R4, FP
+ ADI R4, #-4
+ MOV SP, FP
+ LDR FP, R4
+ LDR R5, SP
+ STB R1, SP
+ JMR R5
+ LDB R1, lablit5
+ MOV R4, FP
+ ADI R4, #-4
+ MOV SP, FP
+ LDR FP, R4
+ LDR R5, SP
+ STB R1, SP
+ JMR R5

@@ -1,0 +1,80 @@
+//this test case just tests the basics of grade C- sequential code
+//for now no arrays no objects 
+
+class MyClass {
+    
+    
+    public MyClass c(){
+        //c(a,b,c);
+        bool b;
+        if (b && b && b) true; else false;
+        int y;
+        int x;
+        switch(y+2+1+0){
+            case 3:
+            x = x=x=x=x=x;
+            break;
+            case 4:
+            x = 3;
+            default:
+            x = 0;
+            break;
+        }
+    }
+    private char d(char d, int test){
+        //empty();
+        return 'd';
+        
+    }
+    private char empty(){
+        //make sure we implment call expression cause we put it in a temp var 
+        //empty();
+        
+    }
+
+    //im assumming no constructors since they cant be called without new
+}
+
+
+
+void kxi2023 main (){
+    //int [] array = new int[2];
+    //array[5];
+    MyClass obj;
+    //obj.c();
+    //main();
+    int x;
+    string name = "Miguel";
+    int y = 5 + 9 * 8 + x;
+    cout << y;
+    cout << name;
+    main();
+    '"';
+    '\'';
+    "'";
+    //"\"";
+    //bool test = 3==2;
+    //test = 2!=4;
+    //test = 'd' == 'e';
+    //test = 3 > 6;
+    //test = 3>1;
+
+//how should we make switch statement turn into??? back to back if statements that will jump to the case or a seperate if statement in each for each case?
+    switch(y+2+1+0){
+            case 3:
+            x = x=x=x=x=x;
+            break;
+            case 4:
+            x = 3;
+            default:
+            x = 0;
+            break;
+        }
+        int o = 2;
+    while(o<10){
+        cout << o;
+        o += 1;
+    }
+    if(true) o = 32; else if(o > 12) if(o>50) cout << "innerif"; else cout << "inner else"; else cout << "outer if";
+
+}

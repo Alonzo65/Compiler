@@ -1,0 +1,46 @@
+class MyClass {
+    public MyClass a;
+    public bool b = true;
+    public int [] myarray;
+
+    public MyClass c(){
+        c(a,b,c);
+        if (b && a && b) true; else false;
+    }
+    private char d(char d, int test){
+       if(a) a = 5+'e'-8*'d'/2;
+       if(true) if(true) 
+       a = a; a = a;
+       if(b) 
+       a = a;
+
+       if(5+9) 
+       a = a;
+       if(b = false) 
+       a = a;
+       while(a) a = a;
+       while(true) a = a;
+       while(b) 
+       a = a;
+       while(5+9) 
+       
+       a = a;
+       while(b=false) 
+       a = a;
+    }
+
+    MyClass(int g){
+        a = g;
+        int [//asdfasdfafxShow] a = 5;
+    }
+}
+
+void kxi2023 main (){
+    int array = new int[2];
+    array[5];
+    g;
+    MyClass [] a;
+    
+    
+    
+}

@@ -1,0 +1,1 @@
+void kxi2023 main (){}

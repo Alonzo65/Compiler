@@ -1,0 +1,353 @@
+// This is the semantics test for final pass-offs
+// We only need to find the indicated semantics errors. 
+// Comments indicating semantic errors begin with '// NOTE:'
+
+class a {
+    public char xyz;
+    public char x = 'q';
+    public b g() {}
+    private char p = 'p';
+    private char[] arrTempTest;
+    private duplicates duplicates = new duplicates();
+    // NOTE: Should report an error here.
+    // Reports that type 'Dog' has not been defined.
+    // Should report line number 16.
+    // can comment out line below to remove error
+    //public Dog y = 'y';
+    public char y;
+
+    public bool paramScopeTest(char xyz, char p, char y) {
+        this.xyz = xyz;
+        this.p = p;
+        this.y = y;
+    }
+
+    public bool testbool(int testInt, char testChar) {}
+
+    private void q(int j, bool q) {
+        int r = 4 + 3;
+        bool iswut = true || false;
+        // NOTE: Should report an error here.
+        // This type of operation char + char should not be allowed.
+        // Should report line number 34.
+        // can comment out line below to remove error
+        //char keeptest = 'k' + 'e' + 'e' + 'p';
+        char k = 'k';
+        if (k < 'r') {
+            //q(r * 3, p < k);
+            while (testbool(r, xyz)) {
+                
+            }
+        }
+        return;
+    }
+
+    private void emptyFunc() {}
+}
+
+class empty {}
+
+class duplicates {
+    public char duplicates;
+    //duplicates() {}
+}
+
+class b {
+    public char y = 'a';
+    public int[] numarr = new int[4];
+    public int[] newarr = new int[5];
+    // NOTE: Should report a duplicate variable error here.
+    // Should report line number 57.
+    // can comment out line below to remove error
+    //public int numarr;
+    private char v = 'q';
+    public char j;
+    public int twenty = 20;
+
+    public int f(int number, char character) {     
+        this.v = 'v'; 
+        // NOTE: Should report a variable not defined error here.
+        // Should report line number 72.
+        // can comment out line below to remove error
+        //a.xyz = 'x';
+        return numarr[6];
+    } 
+    
+    public int testMore(int number, char character, a paramMemberTest, b paramTest2, b[] paramArrTest) {     
+        this.v = 'v'; 
+        paramMemberTest.xyz = 'x';
+        paramTest2.y = 'x';
+        paramArrTest[3].j = 'j';
+        // NOTE: Should report a type error here.
+        // Reports that int is required but received a char.
+        // Should report line number 85.
+        // can comment out line below to remove error
+        //return numarr['6'];
+    }
+
+    public a h(){}
+}
+
+class cat {
+    cat(int kittens) {}
+    public int lmnop = 3;
+}
+
+class Owl { 
+    private int i;
+    public int f() {}
+    public char alpha = 'a';
+    private void g(int i, Owl y) {
+        // NOTE: Should report a duplicate variable error here.
+        // param i and local i are duplicates.
+        // Should report line number 105.
+        // can comment out line below to remove error
+        //int i;
+
+        int a;
+        int[] ii; 
+        Owl[] Owl;
+        Owl[] hoot;
+        Owl thing;
+        Owl x = y;
+
+        // NOTE: Should report an error here.
+        // trying to assign to an rvalue
+        // Should report line number 118.
+        // can comment out line below to remove error
+         //true = false;
+
+        Owl = hoot;
+
+        // NOTE: Should report an error here.
+        // trying to assign to an rvalue
+        // Should report line number 126.
+        // can comment out line below to remove error
+        // 1 = 2;
+
+        i = this.i; // this is valid // passed
+
+        // NOTE: Should report an error here.
+        // trying to assign to an rvalue
+        // Should report line number 134.
+        // can comment out line below to remove error
+        //null = this;
+
+        return;
+        ii = ii;
+    }
+}
+
+class Mouse {
+    private int weight;
+    private int age = -1;
+    public int eyeCount = 2;
+    public char[] pedigree = new char[4];
+    public char firstInitial = 'x';
+
+    private Cat testCat1 = new Cat(26);
+    public Cat testCat2 = new Cat(26);
+
+    Mouse(int age, char[] initials, int weight)
+    {
+        this.age = age;
+        this.weight = weight;
+        Initialize(initials);
+    }
+
+    private void Initialize(char[] initials)
+    {
+        eyeCount = 4;
+        this.pedigree = initials;
+        firstInitial = initials[0];
+
+         // NOTE: Should report variable not defined in Mouse class.
+        // variable with name in local scope, but 'this' tells
+        // it to look at member variables in class scope.
+        // Should report line number 169.
+        // can comment out line below to remove error
+        //this.x = 'c';
+    }
+
+    public char[] PublicFunc()
+    {
+        int i = 3 + 4 * 2 + 83 /3;
+        int j = (i + 2)/(i * -2) + (-23)-+2+-12;
+        char[] result = new char[4];
+        firstInitial = 'r';
+        while (i >= 0)
+        {
+            result[3 - i] = this.pedigree[i];
+            i = i +-1;
+        }
+    }
+    
+    public NoCtor ClassyFunc(Mouse m, NoCtor[] things) {
+        NoCtor one = things[0];
+    }
+
+    public Mouse[] BigMethod(bool[] array, int length, char[] name, int nameLength, char foo, char[] bar, Mouse m, NoCtor n, Mouse[] mice, NoCtor[] nox, bool asdf) {
+        array[0] = true;
+        name[length] = 'c';
+        if (nameLength < length) {
+            array[1] = true;
+        }
+        else {
+            array[1] = false;
+        }
+        bar[0] = foo;
+        if (asdf) {
+            nox[0] = n;
+        }
+        else {
+            nox[1] = n;
+        }
+        m.eyeCount = nameLength / 2 + length;
+        cout << mice[10].eyeCount;
+    }
+
+    public Mouse FeedMouse(int count, bool healthy) { }
+
+    public int IntTime(bool b, char c) { }
+
+    public int GetWeight(bool b, char c) {
+        return weight;
+    }
+}
+
+class NoCtor { 
+    NoCtor(){}
+}
+
+class Cat {
+    public int MiceEaten = 0;
+    private int Weight = 0;
+    public Owl testOwl;
+    // NOTE: Should report a duplicate variable error here.
+    // Should report line number 224.
+    // can comment out line below to remove error
+    //public int Weight = -1;
+
+    Cat(int weight) {
+        this.Weight = weight;
+    }
+    // NOTE: Should report a duplicate function/constructor error here.
+    // Should report line number 231.
+    // can comment out line below to remove error
+    //Cat(){}
+
+    public void FeedMouse(Mouse m) {
+        Weight = Weight + m.GetWeight(true, 'A');
+    }
+    // NOTE: Should report a duplicate function error here.
+    // Should report line number 239.
+    // can comment out line below to remove error
+    //private int FeedMouse(char c) {}
+}
+
+void kxi2023 main() {
+    int x = 12;
+    int y = 20;
+    int g = -4;
+    int f = 0003;
+    int k = +00000533;
+    char l = 'l';
+    int r = 23;
+    int s = 2;
+    bool bubs = true;
+    char[] c = new char[2+4];
+    bool relationalBoolTest;
+    a atest = null;
+    a a = atest;
+
+    cat cat = new cat(r);
+    cat[] kitty = new cat[r];
+    b testingArrStuff;
+
+    cat kitten = null;
+    int[] numNull = null;
+
+    int i = 3 + 4 * 2 + 83 /3;
+    int j = (i + 2)/(i * -2) + (-23)-+2+-12--1++2;
+    int[] ints = new int[10];
+    bool b;
+    bool[] bools = new bool[2];
+    char alpha = 'A';
+    char[] chs = new char[j];
+    char[] foo;
+    Mouse[] mice = new Mouse[ints[4]];
+    Mouse mouse1;
+    Mouse mouse2 = new Mouse(-24 * (i + 2)/(i * -2) + (-23)-+2+-12, null, (i + 2)/(i * -2) + (-23)-+2+-12);
+    Cat cat1 = new Cat(24);
+    NoCtor noct = new NoCtor();
+    NoCtor[] noctArr;
+    
+    chs[0] = 'H';
+    chs[1] = '\n';
+    mouse1 = new Mouse(100, chs, 1);
+    mice[i + j].FeedMouse(i, false).BigMethod(bools, ints[2], chs, j + 1, foo[j - i], foo, mouse2, null, mice, null, i < j);
+    mice[i + j].FeedMouse(i, false).BigMethod(bools, ints[2], chs, j + 1, foo[j - i], foo, mouse2, noct, mice, noctArr, i < j);
+    // NOTE: Should report an undefined function error here.
+    // Reports that function hasn't been defined, because it's missing the first argument of type bool array.
+    // Arity, or number of arguments is not correct
+    // Should report line number 295.
+    // can comment out line below to remove error
+    //mice[i + j].FeedMouse(i, false).BigMethod(ints[2], chs, j + 1, foo[j - i], foo, mouse2, null, mice, null, i < j);
+
+    // NOTE: Should report an undefined function error here.
+    // Reports that function hasn't been defined, because arity and type of arguments are correct, 
+    // but order is incorrect.
+    // Should report line number 302.
+    // can comment out line below to remove error
+    //mice[i + j].FeedMouse(i, false).BigMethod(bools, ints[2], chs, j + 1, mouse2, foo[j - i], foo, null, mice, null, i < j);
+
+    cin >> mouse1.pedigree[i + j];
+    cin >> mouse1.pedigree[i-+2+-12];
+
+    // NOTE: Should report a variable either isn't defined or isn't public inside Mouse class error.
+    // variable exists, but this should have an error because 'testCat1' is private.
+    // Should report line number 311.
+    // can comment out line below to remove error
+    //alpha = mouse1.testCat1;
+
+    // NOTE: Should report a variable either isn't defined or isn't public inside Owl class error.
+    // variable 'testTiger' isn't defined inside of class Owl
+    // Should report line number 317.
+    // can comment out line below to remove error
+    //alpha = mouse1.testCat2.testOwl.testTiger;
+
+    alpha = mouse1.testCat2.testOwl.alpha;
+    
+    cout << mouse1.pedigree[1];
+    cin >> mouse1.eyeCount;
+    cin >> mouse1.pedigree[(i + 2)/(i * -2) + (-23)-+2+-12--1++2];
+    mouse1.PublicFunc();
+    b = j + 12 * (i - j) < j;
+    ints[0] = ints[1] + ints[2];
+    b = ints[2] < ints[i];
+    mouse1.eyeCount = mouse2.eyeCount;
+    mouse1.pedigree[1] = mouse2.pedigree[1];
+    i = mouse1.IntTime(b, alpha) + j * ints[99 * 2];
+    mouse1.FeedMouse(1, true).FeedMouse(2, true).FeedMouse(3, false).eyeCount = ints[10];
+    ints = null;
+    mouse2 = null;
+    cat1.FeedMouse(mouse1);
+    cat1.FeedMouse(mice[i - j]);
+
+    c[s + 3] = c[s - 2];
+
+    testingArrStuff.newarr[4] = x - 20 + testingArrStuff.newarr[2 + 3];
+    testingArrStuff.twenty = testingArrStuff.twenty + -1 + 1;
+    kitty[2].lmnop = kitty[2].lmnop + 4;
+
+    x = y;
+
+    x = y * g + f / k;
+
+    // could pass or fail, depending on an optional change
+    // cin >> atest.g().f(s, l);
+    cout << c[1+3-2*1];
+    relationalBoolTest = x + 12 * (y - g) < r;
+
+    x;
+}

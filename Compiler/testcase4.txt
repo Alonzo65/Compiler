@@ -1,0 +1,55 @@
+class MyClass {
+    public MyClass a;
+    public bool b = true;
+    public int [] test;
+
+    public MyClass c(){
+        if (a == b) true; else false;
+    }
+    private char d(char d, int test){
+        b = a[1] + 1;
+        c().a.c().b;
+        c(a.a.b).a.c(a.c);
+    }
+
+    MyClass(int g){
+        a = g;
+        int [//asdfasdfafxShow] a = 5;
+    }
+}
+
+void kxi2023 main (){
+    int array = new int[2];
+    array[5];
+    g;
+    MyClass [] a;
+    3[5];
+    cin >> array = 8;
+    cin >> array += 8;
+    cin >> a[1].a.c;
+    cin >> a[1].a.c();
+    cin >> a[1].a.b;
+    cin >> a.a.c+5;
+    cin >> 3-9[1].a.c;
+    cin >> a[4=87].a.b;//doublereports error
+    cin >> a[1].c(a.c()=45).b;//double reports error
+    //a[1].c(a=5+5).a.c(a.c()=5+5).test = 78*98; this causes my semantics to report the errror twice
+    //a[1].a.c = 5-56;
+    //a[a.test].a.c(a.b);
+    //a(a.a.b).a.c(a.c);
+    main();
+    //b.g[1].d().c;
+    //b.g[1].c;
+    //b[1].c;
+    //f().c;
+    //f()[23].b()[1].c;
+    //a.c;
+    //c = g + array; 
+    //a=b=c=d;
+    //d-f=z+x=y; //(d-f=(z+x=y));
+    //2-d=5;
+    //a[1+5].c = d=k=i;
+    //a+3=b/5=d;
+    //3+3[1]=4;
+    
+}

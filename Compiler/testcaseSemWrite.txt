@@ -1,0 +1,52 @@
+class MyClass {
+    public MyClass a;
+    public bool b = true;
+    public int [] test;
+
+    public MyClass c(){
+        if (a == b) true; else false;
+    }
+    private char d(char d, int test){
+        b = a[1] + 1;
+        c().a.c().b;
+        c(a.a.b).a.c(a.c);
+    }
+
+    MyClass(int g){
+        a = g;
+        int [//asdfasdfafxShow] a = 5;
+    }
+}
+
+void kxi2023 main (){
+    int array = new int[2];
+    array[5];
+    g;
+    MyClass [] a;
+    a[1].a.c = 5-56;
+    a[1].a.b = 5-56;
+    a.b = a.b+56;
+    a[1].c().a.c() = 78*98;
+    a[1].c().a.c = 78*98;
+    (a[1].c().a.c) = 78*98;
+    (a[1].c().a.c()) = 78*98;
+    (a[1].c().a) = 78*98;
+    5-8= a=5/6= 8*9+= (a+5) = 78*98;
+    a[1].c().a.c() += 78*98;
+    a[1].c().a.c = 78*98;
+    (a[1].c().a.c) += 78*98;
+    (a[1].c().a.c()) += 78*98;
+    (a[1].c().a) += 78*98;
+    5-8+= a*=5/6/= 8*9-= (a+5) += 78*98;
+    a.test[1] = 54+55;
+    a[1].c(a=5+5).a.c(a.c()=5+5).test = 78*98;
+    5+a[1] = 5-56;
+    a[a.test].a.c(a.b);
+    a(a.a.b).a.c(a.c);
+    main();
+    
+    d-f=z+x=y; //(d-f=(z+x=y));
+    2-d=5;
+    
+    
+}

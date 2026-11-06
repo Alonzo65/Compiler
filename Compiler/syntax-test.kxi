@@ -1,0 +1,415 @@
+// This is the syntax test for final pass-offs
+// NOTE: There are many semantic errors as well. Do NOT worry about those.
+// We only need to find the indicated syntax errors. 
+// Comments indicating syntax errors begin with '// NOTE:'
+// Syntax errors should report before any semantics errors.
+
+class DudeBro {
+}
+
+class Cat {
+    public int age;
+    private int[] ageArr;
+    private int newAge = 29;
+    private int weight = 37;
+    public Testing catTest;
+    public void[] run(int x, int[] y, char[] z, char a, char b, char[] c, void d, void[] e, bool f, bool[] g, Testing h, Testing[] i) {
+        int speed;
+        int[] arr;
+        speed = 7;
+
+        this.age = newAge;
+        speed = this.age * this.weight;
+        cout << weight;
+    }
+
+    private Thing testnada() {}
+    public int testnadaParam(int x, char y) {}
+    private void testNadaOneParam(int z) {}
+
+    private char[] q = new char('q','z','f');
+
+    Cat() {
+        int whatabout = 3245;
+    }
+}
+
+class Cat
+{
+    public int weight;
+    public int wiskerCount = 20;
+    private int mouseCount = 0;
+    private char[] initials = new char[2];
+
+    Cat(int weight, char firstInitial, char lastInitial)
+    {
+        this.weight = weight;
+        this.initials[0] = firstInitial;
+        initials[1] = lastInitial;
+    }
+
+    public void EatMouse()
+    {
+        mouseCount = mouseCount --1; // Overly complicated to test number sign.
+    }
+
+    private void Sleep()
+    {
+        weight = weight + 1;
+    }
+
+    public void ChaseMouse()
+    {
+        weight = weight - 1;
+    }
+}
+
+class Complex
+{
+    private int[] EarlyMethod(int x, char y, int[] skittles, char[] name, Cat[] cats, bool happy)
+    {
+        int d = x + 24;
+        int e = d + x/2;
+        int[] tuff = new int[4];
+        tuff[0] = d - e;
+        tuff[1] = x - 72 + e/d;
+        tuff[2] = 123 - 111 + tuff[1];
+        tuff[3] = tuff[0] + tuff[1] + tuff[2];
+        return skittles;
+    }
+
+    Complex(bool[] array, int length, char[] name, int nameLength)
+    {
+        
+    }
+
+    public Mouse[] GetCatFood(char[] initials)
+    {
+        Mouse[] result = new Mouse[2];
+        result[0] = new Mouse(2, initials, 11);
+        result[1] = new Mouse(1, initials, 10);
+        return result;
+    }
+
+    public int[] IAmLater = new int[4];
+    private bool Boolean = false;
+    // NOTE: Should report an error here. Missing the access modifier before SomeChars
+    // Reports something like "found char, Expecting ...." or similar.
+    // Should report line number 100.
+    // can comment out line below to remove error
+    //char[] SomeChars = new char[20];
+    
+    // NOTE: Should report an error here. Missing the type before 'length'
+    // Reports something like "found ,; Expecting identifier" or similar.
+    // sees 'length' as a type and since nothing follows, there's no 'identifier'
+    // Should report line number 108.
+    // can uncomment line below and comment out following line ot fix error.
+     private void DoThings(bool[] array, int length, char[] name, int nameLength)
+    //private void DoThings(bool[] array, length, char[] name, int nameLength)
+    {
+        IAmLater[0] = 1 + 2 + 3 + 4 + 5;
+        IAmLater[1] = 3 + 4 + 5 - 6 / 2;
+        IAmLater[2] = 5 - 7 + 8 - 9/3;
+        { // Unnecessary blocking to test statement parsing.
+            IAmLater[3] = (10 - 9) + 24 / 4 - (100 - 99);
+        }
+        IAmLater[4] = 99;
+        SomeChars[0] = 'a';
+        SomeChars[nameLength] = 'b';
+        SomeChars['c'] = 'c';
+        SomeChars[3] = '\n';
+        SomeChars[4] = '\t';
+        SomeChars[5] = 'a';
+        SomeChars[6] = 'a';
+        SomeChars[7] = 'a';
+        SomeChars[8] = 'b';
+        SomeChars[9] = 'b';
+    }
+}
+
+class Mouse
+{
+    public int weight;
+    public int eyeCount = 2;
+    public char[] pedigree = new char[4];
+    private char firstInitial = 'z';
+    private int age;
+
+    Mouse(int age, char[] initials, int weight)
+    {
+        this.age = age;
+        this.weight = weight;
+        Initialize(initials);
+    }
+
+    private void Initialize(char[] initials)
+    {
+        this.pedigree = intials;
+        this.firstInitial = initials[0];
+    }
+
+    public char[] GetPedigreeReversed()
+    {
+        int i = 3;
+        char[] result = new char[4];
+        while (i >= 0)
+        {
+            result[3 - i] = this.pedigree[i];
+            i = i +-1; // Overly complicated to test number sign.
+        }
+    }
+}
+
+class Cat2 {
+    public int age;
+    private int weight;
+    public int x=y+q-e*t/y<u<=i>o>=pandzorx==b;
+    public void run(int x, int y) {
+        int speed;
+        int[] arr;
+        if (true) {
+
+        }
+        else {
+            just = test;
+        }
+        x=y+q-e*t/y<u<=i>o>=pandzorx==b;
+        speed = 7;
+    }
+    Cat2() {}
+
+}
+
+class Empty { }
+
+class Testing {
+    private Cat number;
+    // NOTE: Should report an error here. Missing the second apostrophe after a character literal
+    // Reports something like "found 'T, Expecting ..." or similar.
+    // Should report line number 191.
+    // can comment out line below to fix error.
+    //private char printT = 'T;
+    private char printE = 'E';
+    private char printS = 'S';
+    private char endl = '\n';
+
+    Testing(char D, char E, char A) {
+        T = D;
+        E = E;
+        A = A;
+    }
+
+    private int[] greater(int x, Cat p, void c, int y) {
+        if (x > y) {
+            return x;
+        }
+        else 
+            return y;
+            // 5 = 4;
+            x = 0;
+            while(x != 4)
+                x = x + 1;
+            x=(y+q-e)*t/y<u<=i>o>=p && z || x==b;
+    }
+
+    public bool testfunc() {
+        cin >> T;
+        cout << T + E + S + T + endl;
+    }
+
+    public bool testTheTestFunc() {
+        this.number.catTest.testfunc();
+        cout << 'S' + 'u' + 'c' + 'c' + 'e' + 's' + 's';
+    }
+}
+
+class Dog {
+    public bool didBark;
+    public void bark() {
+        didBark = true;
+    }
+    private void one(char c) {
+        int test;
+    }
+    private int many(int i, bool b, char c, Cat cat) {}
+    Dog () {
+        cout << testvar;
+    }
+}
+
+class moreTests {
+    public Cat anotha;
+    public bool[] lezgo(bool thisguy) {
+        switch(7) {
+            default:
+                if(lezgo == true)
+                    return;
+        // NOTE: Should be looking for }.
+        // Reports something like "Looking for }, found x" or similar.
+        // Should report line number 253.
+        // can uncomment line below to fix error.
+         }
+
+        x.y[eight] = new int[25 - 18];
+        x[hello] = 98;
+        // NOTE: Should be looking for ).
+        // Reports something like "Looking for ], found x" or similar.
+        // Should report line number 259.
+        // can comment out line below to fix error.
+        //x[-5+23 / (2*4+(d)];
+    }
+}
+
+// NOTE: Should be looking for kxi2023.
+// Reports something like "Looking for kxi2023, found kxi2020" or similar.
+// Should report line number 267.
+// can comment out line below and uncomment following line to fix error
+//void kxi2020 main () {
+ void kxi2023 main () {
+    char quack;
+    char[] c;
+    Cat kittenNot = null;
+    Cat kitten = new Cat();
+    Testing test;
+    Testing dead = new Testing('D','E','A');
+    int test = 0; // assignments only at top? per syntax
+    Cat cat1 = new Cat(1, 'a', 'b');
+    Cat cat2 = new Cat(100, 'd', 'b');
+    Cat cat3 = new Cat(10, 'c', 'b');
+    bool[] array = new bool[4];
+    char[] foo = new char[1];
+    Complex comp;
+    Mouse[] food = new Mouse[10];
+    char[] pedigree;
+
+    x=y+q-e*t/y<u<=i>o>=pandzorx==b;
+    x = y;
+    this.x = y;
+    // Outdated test case; should not be an issue.
+    // Reports something like "Looking for ;, found x" or similar.
+    // Should report line number 292.
+    // can comment out line below to fix error.
+    Cat x = y;
+    cout << test;
+    cin >> test;
+    x=y+q-e*t/y<u<=i>o>=p && z || x==b!=23/4/4-+369+-2456--98++246*-23*+56/+234/((((((-092+9))))))+q && y;
+    x=(y+q-e)*t/y<u<=i>o>=p && z || x==b;
+    c = 's';
+
+    switch (x) {
+        case 4: {
+            x = -2345 * +9; 
+            break;
+            }
+        case '5':
+            c = '4';
+        case 3:
+            while (x < 6) {
+                while(true) {
+                    if (true) {
+                        if (true) {
+                            if (true) {
+                                if (true) {
+                                    if (true) {
+                                        if (true) {
+                        
+            
+                                        }
+                        
+            
+                                    }
+                        
+            
+                                }
+                        
+            
+                            }
+            
+                    }
+            
+                    }
+                    else {
+                        just = test;
+                    }
+                }
+                x=x+1;
+            }
+        default:
+            break;
+    }
+
+    test.testfunc();
+    dead.testfunc();
+    test.greater(23 + 4, kittenNot, null || true, (5783 / (28*2)));
+    kitten.catTest.testfunc();
+    kitten.catTest = new Testing('K', 'I', 'T');
+    kitten.catTest.testfunc();
+
+    if (true != false && false != true) {
+        // '/' = x;
+    }
+    else if (foo == comp) {
+        y = x + y;
+    }
+    else {
+        x=y;
+    }
+    while(true) {
+        if (true) {
+            if (true) {
+                if (true) {
+                    if (true) {
+                        if (true) {
+                            if (true) {
+            
+
+                            }
+            
+
+                        }
+            
+
+                    }
+            
+
+                }
+
+        }
+
+        }
+        else {
+            just = test;
+        }
+    }
+    // cin >> x=y+q-e*t/y<u<=i>o>=pandzorx==b;
+    // HERE'S ANOTHER TEST COMMENT
+    switch (x) {
+        case 10:
+            break;
+        // case -11:
+            // break;
+        case '\n':
+            break;
+        default:
+            x=y+q-e*t/y<u<=i>o>=pandzorx==b; 
+    }
+
+    array[0] = true;
+    array[1] = false;
+    array[2] = true;
+    array[3] = true;
+    foo[0] = 'y';
+    comp = new Complex(array, 23, foo, 1);
+    comp.DoThings(array, 4, foo, 1);
+    food = comp.GetCatFood(foo);
+    cat3 = new Cat(20, 'z', 'y'); // .GetCatFood(foo); // Chaining not supported by the language in this context.
+    cat3.IAmLater[0] + cat3.IAmLater[1];
+
+    return;
+    return test;
+}
+// NOTE: Should be looking for EOF.
+// Reports something like "Looking for EOF, found x" || similar.
+// Should report line number 415, 410, 411 || 416.
+// can comment out out line below to fix error.
+//x = y;

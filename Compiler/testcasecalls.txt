@@ -1,0 +1,31 @@
+class MyClass {
+    public MyClass a;
+    public bool b = true;
+    public int [] myarray;
+
+    public MyClass c(){
+        if (a == b) true; else false;
+    }
+    private char d(char d, int test){
+       c = a;
+       a.MyClass.b = false;
+       a.b() = false;
+       a.b();
+       3+3();
+    }
+
+    MyClass(int g){
+        a = g;
+        int [//asdfasdfafxShow] a = 5;
+    }
+}
+
+void kxi2023 main (){
+    int array = new int[2];
+    array[5];
+    g;
+    MyClass [] a;
+    
+    
+    
+}

@@ -1,0 +1,35 @@
+class MyClass {
+    public MyClass a;
+    public bool b = true;
+    public int [] myarray;
+    
+    public MyClass c(){
+        //c(a,b,c);
+        if (b && a && b) true; else false;
+    }
+    private char d(char d, int test){
+    }
+
+    MyClass(int g){
+        a = g;
+        int defe = 9;
+        MyClass();
+        MyClass(9);
+        MyClass(defe);
+        //MyClass(a,b);
+       // MyClass(a);
+       // MyClass(myarray); //is this allowed just passing an arrray variable without an index???
+        MyClass('d');
+        int [//asdfasdfafxShow] a = 5;
+    }
+}
+
+void kxi2023 main (){
+    int array = new int[2];
+    array[5];
+    
+    MyClass [] a;
+    
+    
+    
+}

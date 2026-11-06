@@ -1,0 +1,16 @@
+// Final pass-off test for Lexer
+// Everything should lex properly and nothing should crash
+
+'\n'whatif(a<b;-10++373,if'a'
+-10+10@$
+// testing comments also, tests whitespace on line 5
+whileif(a<b,-10.x7z+AbC{3/-11if}
+
+"lots of text\nin a string"
+"a bogus\bstring"
+
+<<           <<>><=>====23>d<switch
+// testing comments
+// testing comments
+abc
+x=y+q-e*t/y<u<=i>o>=pandz||x==b and(z)or test;

@@ -1,0 +1,40 @@
+class MyClass {
+    public MyClass a;
+    public bool b = true;
+    public int [] myarray;
+
+    public MyClass c(){
+        if (a == b) true; else false;
+    }
+    private char d(char d, int test){
+        b = a[1] + myarray;
+        myarray = a;
+        myarray[a] = 1;
+        myarray[0] = 1;
+        c().a.c().b;
+        c(a.a.b[1+6]).a.c(a.c);
+        c(a.a.b[1+'d']).a.c(a.c);
+        c(a.a.myarray).a.c(a.c);
+        int [] test1 = new int[a];
+        int [] test2 = new char[a];
+        int [] test3 = new d();
+        char [] test4 = new d[1];
+        int [] test5 = new a();
+        int [] test6 = new a();
+    }
+
+    MyClass(int g){
+        a = g;
+        int [//asdfasdfafxShow] a = 5;
+    }
+}
+
+void kxi2023 main (){
+    int array = new int[2];
+    array[5];
+    g;
+    MyClass [] a;
+    
+    
+    
+}
